@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'prydis'
+
+Prydis::Cli.start
