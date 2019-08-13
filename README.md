@@ -1,28 +1,37 @@
-# prize
+# Prize
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/prize`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Simple Redis CLI client with pry loaded
 
 ## Installation
 
-Add this line to your application's Gemfile:
 
-```ruby
-gem 'prize'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it yourself as:
 
     $ gem install prize
 
+Or:
+
+    $ sudo gem install prize
+
 ## Usage
 
-TODO: Write usage instructions here
+```
+Commands:
+  prize                 # Simple Redis CLI client with Pry loaded
+  prize help [COMMAND]  # Describe available commands or one specific command
+
+Options:
+  -u, [--url=URL]                      # Server URL, for a TCP connection: `redis://:[password]@[hostname]:[port]/[db]` (password, port and database are optional), for a unix socket connection: `unix://[path to Redis socket]`. This overrides all other options.
+  -h, [--host=HOST]                    # Server hostname (default: 127.0.0.1)
+  -p, [--port=N]                       # Server port (default: 6379)
+  -s, --socket, [--path=PATH]          # Server socket (overrides hostname and port)
+          [--timeout=N]                # Timeout in seconds (default: 5.0)
+          [--connect-timeout=N]        # Timeout for initial connect in seconds (default: same as timeout)
+  -a, [--password=PASSWORD]            # Password to authenticate against server
+  -n, [--db=N]                         # Database number (default: 0)
+          [--replica], [--no-replica]  # Whether to use readonly replica nodes in Redis Cluster or not
+          [--cluster=CLUSTER]          # List of cluster nodes to contact, format: URL1,URL2,URL3...
+```
 
 ## Development
 
