@@ -3,7 +3,7 @@ require 'redis'
 require 'hiredis'
 require 'pry'
 
-module Prydis
+module Prize
   class Cli < ::Thor
 
     default_command :main

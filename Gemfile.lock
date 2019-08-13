@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    prydis (0.1.0)
+    prize (0.1.0)
       activesupport
       hiredis (>= 0.6.0)
       pry (>= 0.12.0)
@@ -52,7 +52,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.17)
-  prydis!
+  prize!
   rake (~> 10.0)
   rspec (~> 3.0)
 

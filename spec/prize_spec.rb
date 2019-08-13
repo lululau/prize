@@ -1,6 +1,6 @@
-RSpec.describe Prydis do
+RSpec.describe Prize do
   it "has a version number" do
-    expect(Prydis::VERSION).not_to be nil
+    expect(Prize::VERSION).not_to be nil
   end
 
   it "does something useful" do
