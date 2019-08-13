@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    prize (0.1.1)
+    prize (0.1.2)
       activesupport
       hiredis (>= 0.6.0)
       pry (>= 0.12.0)
