@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %{Simple Redis CLI client with pry loaded}
   spec.description   = %{Simple Redis CLI client with pry loaded}
-  spec.homepage      = "https://github.com/lululau/ktct"
+  spec.homepage      = "https://github.com/lululau/prize"
   spec.license       = "MIT"
 
 
