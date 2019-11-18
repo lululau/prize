@@ -22,6 +22,9 @@ module Prize
     def main
       redis = Redis.new(build_options)
       Pry.config.prompt = build_prompt(redis)
+      if File.exists?(File.expand_path('~/.prizerc'))
+        Pry.load_file_at_toplevel(File.expand_path('~/.prizerc'))
+      end
       Pry.start(redis)
     end
 
