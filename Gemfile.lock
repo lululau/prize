@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    prize (0.1.3)
+    prize (0.2.0)
       activesupport
       hiredis (>= 0.6.0)
       pry (>= 0.13.1)
@@ -61,4 +61,4 @@ DEPENDENCIES
   rspec (~> 3.0)
 
 BUNDLED WITH
-   1.17.3
+   2.1.2
