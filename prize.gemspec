@@ -1,7 +1,4 @@
-
-lib = File.expand_path("../lib", __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "prize/version"
+require_relative "lib/prize/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "prize"
@@ -13,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.description   = %{Simple Redis CLI client with pry loaded}
   spec.homepage      = "https://github.com/lululau/prize"
   spec.license       = "MIT"
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
 
   # Specify which files should be added to the gem when it is released.
@@ -24,14 +22,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'activesupport'
-  spec.add_dependency 'redis', '>= 4.0.0'
-  spec.add_dependency 'hiredis', '>= 0.6.0'
+  spec.add_dependency 'activesupport', '~> 6.0.3'
+  spec.add_dependency 'redis', '~> 4.0.0'
+  spec.add_dependency 'hiredis', '~> 0.6.0'
   spec.add_dependency 'thor', '~> 0.20.0'
-  spec.add_dependency 'pry', '>= 0.13.1'
+  spec.add_dependency 'pry', '~> 0.13.1'
   spec.add_dependency 'rainbow', '~> 3.0.0'
-
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
 end
