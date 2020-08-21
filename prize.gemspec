@@ -28,9 +28,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'redis', '>= 4.0.0'
   spec.add_dependency 'hiredis', '>= 0.6.0'
   spec.add_dependency 'thor', '~> 0.20.0'
-  spec.add_dependency 'pry', '>= 0.12.0'
+  spec.add_dependency 'pry', '>= 0.13.1'
+  spec.add_dependency 'rainbow', '~> 3.0.0'
 
-  spec.add_development_dependency "bundler", "~> 1.17"
+  spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 end
