@@ -1,4 +1,4 @@
-require_relative "lib/prize/version"
+require_relative 'lib/prize/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "prize"
@@ -12,7 +12,6 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
@@ -23,9 +22,12 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'activesupport', '~> 6.0.3'
+  spec.add_dependency 'net-ssh-gateway', '~> 2.0.0'
+  spec.add_dependency 'pry', '~> 0.13.1'
+  spec.add_dependency 'pry-byebug', '~> 3.9.0'
+  spec.add_dependency 'pry-doc', '~> 1.1.0'
+  spec.add_dependency 'rainbow', '~> 3.0.0'
   spec.add_dependency 'redis', '~> 4.0.0'
   spec.add_dependency 'hiredis', '~> 0.6.0'
   spec.add_dependency 'thor', '~> 0.20.0'
-  spec.add_dependency 'pry', '~> 0.13.1'
-  spec.add_dependency 'rainbow', '~> 3.0.0'
 end

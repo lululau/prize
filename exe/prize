@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'prize'
+PrizeSetsidWrrapper = File.dirname(File.absolute_path(__FILE__)) + '/prize_setsid_wrapper'
+
+require "prize"
 
 Prize::Cli.start
