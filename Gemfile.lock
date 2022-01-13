@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    prize (0.3.0)
+    prize (0.3.1)
       activesupport (~> 6.0.3)
       hiredis (~> 0.6.0)
       net-ssh-gateway (~> 2.0.0)
