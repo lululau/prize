@@ -1,5 +1,4 @@
 require 'pry'
-require 'pry-byebug'
 require 'prize/commands'
 require 'rainbow'
 

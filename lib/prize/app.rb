@@ -29,7 +29,7 @@ module Prize
     end
 
     def load_initializer!
-      if File.exists?(File.expand_path('~/.prizerc'))
+      if File.exist?(File.expand_path('~/.prizerc'))
         load(File.expand_path('~/.prizerc'))
       end
     end

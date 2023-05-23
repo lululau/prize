@@ -23,9 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'activesupport', '~> 6.0.3'
   spec.add_dependency 'net-ssh-gateway', '~> 2.0.0'
-  spec.add_dependency 'pry', '~> 0.13.1'
-  spec.add_dependency 'pry-byebug', '~> 3.9.0'
-  spec.add_dependency 'pry-doc', '>= 1.0.0'
+  spec.add_dependency 'pry', '~> 0.14.2'
   spec.add_dependency 'rainbow', '~> 3.0.0'
   spec.add_dependency 'redis', '~> 4.0.0'
   spec.add_dependency 'hiredis', '~> 0.6.0'
